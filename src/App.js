@@ -17,13 +17,14 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.collections)
     return (
       <div className="App">
         <div className="navbar">
           {/* <Navbar /> */}
         </div>
         <div className="sidebar">
-          <Collections collections={this.state.collections} />
+          <Collections collections={this.state.collections}/>
         </div>
         <div className="main-content">
           {/* <MetImage /> */}
