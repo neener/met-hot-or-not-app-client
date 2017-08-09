@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Collections from './components/Collections';
+import MetObjects from './components/MetObjects'
 import CollectionService from './services/CollectionService';
+import MetObjectService from './services/MetObjectService';
 import './App.css';
 
 class App extends Component {
@@ -8,12 +10,15 @@ class App extends Component {
     super()
 
     this.state = {
-      collections: []
+      collections: [],
+      metobjects: []
     }
   }
 
   componentDidMount() {
     CollectionService.fetchCollections().then(collections => this.setState({ collections }))
+    MetObjectService.fetchMetObjects().then(metobjects => this.setState({ metobjects }))
+    
   }
 
   render() {
@@ -27,7 +32,7 @@ class App extends Component {
           <Collections collections={this.state.collections}/>
         </div>
         <div className="main-content">
-          {/* <MetImage /> */}
+          <MetObjects metobjects={this.state.metobjects} /> 
         </div>
 
       </div>
