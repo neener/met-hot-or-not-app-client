@@ -5,8 +5,8 @@
 div.navbar {
   float: left;
   width: 100vw;
-  height: 20vh;
-  background: #F0D5C9;
+  height: 10vh;
+  background: #F0FFFF;
   color: black;
   border-bottom: 2px solid white;
 }
