@@ -5,25 +5,15 @@
 div.navbar {
   float: left;
   width: 100vw;
-  height: 10vh;
-  background: #F0FFFF;
+  height: 20vh;
+  background: red;
   color: black;
-  border-bottom: 2px solid white;
-}
-
-.sidebar {
-  float: left;
-  width: 28%;
-  height: 90vh;
-  background: #FAEAC9;
-  color: maroon;
-  border-right: 2px solid white;
+  border-bottom: 33px solid white;
 }
 
 .main-content {
-  float: left;
-  width: 71.5%;
+  margin-top: 1em;
   height: 90vh;
-  background: #B68976;
+  background: white;
   color: brown;
 }

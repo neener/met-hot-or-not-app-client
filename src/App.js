@@ -8,7 +8,6 @@ class App extends Component {
     super()
 
     this.state = {
-      collections: [],
       metobjects: []
     }
   }
@@ -24,9 +23,6 @@ class App extends Component {
         <div className="navbar">
           <h2> Metropolitan Museum of Art </h2>
           {/* <Navbar /> */}
-        </div>
-        <div className="sidebar">
-          {/* <Departments /> */}
         </div>
         <div className="main-content">
           <MetObjects metobjects={this.state.metobjects} /> 
