@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MetObjects from './components/MetObjects'
-import MetObjectService from './services/MetObjectService';
+import MetObjects from '../components/MetObjects'
+import MetObjectService from '../services/MetObjectService';
 import '../styles/App.css'
 
 class App extends Component {
